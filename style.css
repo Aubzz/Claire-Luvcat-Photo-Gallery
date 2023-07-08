@@ -5,5 +5,39 @@
 }
 
 body {
-  background-color: ;
+  font-family: sans-serif;
+  background-color: #fff;
+}
+
+.main-header {
+  background-color: hsl(212, 21%, 14%);
+  color: #fff;
+  padding: 32px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px 10px;
+  gap: 16px;
+}
+
+.gallery img {
+  width: 100%;
+  max-width: 350px;
+  object-fit: cover;
+  height: 300px;
+  border-radius: 15px;
+}
+
+.gallery::after {
+  content: "";
+  width: 350px;
 }
